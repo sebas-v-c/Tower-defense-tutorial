@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Environment/Tilesets/terrainTiles_default.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Environment/Props/treeGreen_large.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Environment/Props/treeBrown_large.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Environment/Props/crateWood.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Environment/Props/crateMetal.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Environment/Tilesets/Obstructed.png" type="Texture" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "terrainTiles_default.png 0"
@@ -109,6 +110,20 @@
 4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
+6/name = "Obstructed.png 6"
+6/texture = ExtResource( 6 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 64, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
 
 [node name="Map 1" type="Node2D"]
 
