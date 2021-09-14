@@ -48,7 +48,7 @@ func start_new_wave():
 
 
 func retrieve_new_data():
-	var wave_data = [["BlueTank", 0.7], ["BlueTank", 0.1]]
+	var wave_data = [["BlueTank", 3], ["BlueTank", 0.1]]
 	current_wave += 1
 	enemies_in_wave = wave_data.size()
 	return wave_data
@@ -112,5 +112,6 @@ func verify_and_build():
 		# If nothing happens verify that control node is not filering the mouse
 		var new_tower = load("res://Scenes/Turrets/" + build_type + ".tscn").instance()
 		new_tower.position = build_location
+		new_tower.built = true
 		map_node.get_node("Turrets").add_child(new_tower, true)
 		map_node.get_node("TowerExclusion").set_cellv(build_tile, 5)
